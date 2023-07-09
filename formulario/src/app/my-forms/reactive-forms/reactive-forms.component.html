@@ -1,0 +1,69 @@
+<form [formGroup]="userModel" class="row col-8 g-3  d-flex justify-content-center">
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input
+  formControlName="username"
+  type="text"
+  id="inputEmail4"
+  type="text" 
+  class="form-control" 
+  placeholder="Username" 
+  aria-label="Username" 
+  aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <input 
+  formControlName="email"
+  type="email"
+  class="form-control"
+  id="inputEmail4" 
+  type="text" 
+  class="form-control" 
+  placeholder="Recipient's username" 
+  aria-label="Recipient's username" 
+  aria-describedby="basic-addon2">
+  <span class="input-group-text" id="basic-addon2">@example.com</span>
+</div>
+
+<label for="basic-url" class="form-label">Your vanity URL</label>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon3">https://linkedin.com/users/</span>
+  <input
+  formControlName="linkedin" 
+  type="text" 
+  lass="form-control" 
+  id="basic-url" 
+  aria-describedby="basic-addon3">
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text">$</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-text">.00</span>
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+  <span class="input-group-text">@</span>
+  <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+</div>
+
+<div class="input-group">
+  <span class="input-group-text">With textarea</span>
+  <textarea class="form-control" aria-label="With textarea"></textarea>
+</div>
+</form>
+<div class="col-4">
+  <h5 >tabla</h5>
+  <table class="table-secondary">
+    <tr>
+    <td class="table-dark">usenarme</td>
+    <td class="table-dark">email</td>
+    <td class="table-dark">linkedin</td>
+    <tr>
+    <td * class="table-dark">usenarme</td> 
+  </table>
+  <pre class="">{{ userModel.value | json }}</pre>
+  
+</div>
